@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/sidmishraw/Documents/AndroidDevelopment/apktools/Doujins-5.3.5/smali/com/a/a/a'
+let g:netrw_dirhist_2='/Users/sidmishraw/.emacs.d'
+let g:netrw_dirhist_3='/Users/sidmishraw/.emacs.d/auto-save-list'
+let g:netrw_dirhist_4='/Users/sidmishraw/Documents/workspace/cpp_stuff1/BackToCpp/BackToCpp.xcodeproj/xcuserdata'
+let g:netrw_dirhist_5='/Users/sidmishraw/Documents/workspace/cpp_stuff1/BackToCpp/BackToCpp.xcodeproj/xcuserdata/sidmishraw.xcuserdatad'
+let g:netrw_dirhist_6='/Users/sidmishraw/AndroidStudio/ProjectOrion/.idea'
