@@ -3,8 +3,35 @@ set nocp
 " -- Mapping the Esc key starts inteferring with the Arrow keys
 "
 " -- My vimrc file that holds all the VIM configurations
-filetype on
+filetype off
 syntax on
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+
 set background=dark
 colorscheme material-theme
 " -- Sets the defualt size of the lines and columns VIM opens up with
@@ -40,3 +67,17 @@ set hlsearch
 set showmatch
 
 set mouse=a
+
+" -- setting up plugins to use with Rustlang, Python, C, C++, Java and Golang,
+"  JS, HTML etc
+"
+"  "
+Plugin 'rust-lang/rust.vim'
+Plugin 'davidhalter/jedi-vim'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'scrooloose/nerdtree'
+Bundle 'klen/python-mode'
+
+
+set cursorline
+let python_highlight_all=1
