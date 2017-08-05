@@ -32,14 +32,14 @@ filetype plugin indent on    " required
 
 
 
-set background=dark
-colorscheme material-theme
+" set background=dark
+" colorscheme material-theme
 " -- Sets the defualt size of the lines and columns VIM opens up with
 " -- my default is (l:35, c:150)
-set lines=35 columns=150
+" set lines=35 columns=150
 " -- colorcolumn - max columns after which I should switch lines for
 " -- maintaing reability - set to 95
-set colorcolumn=95
+" set colorcolumn=95
 set number
 
 " -- since VIM was made for old computers with low memory, allow it to have more
@@ -78,6 +78,8 @@ Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'
 
+" Plugin for installing autocomplete for vim
+Plugin 'Valloric/YouCompleteMe'
 
-set cursorline
-let python_highlight_all=1
+" set cursorline
+" let python_highlight_all=1
