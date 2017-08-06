@@ -60,13 +60,16 @@ autocmd BufWritePre * :%s/\s\+$//e
 " -- better search - have VIM highlight found items
 set hlsearch
 
-
-
-
 "-- show matching brackets
 set showmatch
 
-set mouse=a
+" -- for enabling visual mode in vim
+"  Doesn't seem to work with vimv8.0, use option click for moving cursor
+"  around instead as a workaround
+" set mouse=a
+
+" -- for setting backspace option
+" set backspace=indent,eol,start
 
 " -- setting up plugins to use with Rustlang, Python, C, C++, Java and Golang,
 "  JS, HTML etc
@@ -81,5 +84,6 @@ Bundle 'klen/python-mode'
 " Plugin for installing autocomplete for vim
 Plugin 'Valloric/YouCompleteMe'
 
-" set cursorline
+set cursorline
+
 " let python_highlight_all=1
