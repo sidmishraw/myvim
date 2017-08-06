@@ -29,9 +29,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-
-
 " set background=dark
 " colorscheme material-theme
 " -- Sets the defualt size of the lines and columns VIM opens up with
@@ -70,6 +67,10 @@ set showmatch
 
 " -- for setting backspace option
 " set backspace=indent,eol,start
+"
+" set backspace=2 seems to work, set backspace=indent,eol,start might work for
+" someother system
+set backspace=2
 
 " -- setting up plugins to use with Rustlang, Python, C, C++, Java and Golang,
 "  JS, HTML etc
@@ -85,5 +86,9 @@ Bundle 'klen/python-mode'
 Plugin 'Valloric/YouCompleteMe'
 
 set cursorline
+
+" disabling jedi python's autocomplete
+" in favor of YouCompleteMe
+let g:jedi#completions_enabled=0
 
 " let python_highlight_all=1
